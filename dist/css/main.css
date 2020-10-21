@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0; }
+
+body {
+  font-family: 'Roboto'; }
+  body a {
+    text-decoration: none; }
+
+header {
+  display: inline; }
+  header ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none; }
+  header ul li {
+    padding: 0 0.75rem; }
+  header ul li:hover {
+    color: #00e6e6; }
+  header a:hover {
+    color: #00e6e6; }
+
+.hdr-top {
+  display: flex;
+  background: #333333;
+  color: #fff;
+  padding: .25rem 0.75rem;
+  justify-content: space-between; }
+  .hdr-top .fab {
+    color: #fff; }
+  .hdr-top a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 0.2rem; }
+  .hdr-top ul li {
+    padding: 0 0.3rem; }
+
+.hdr {
+  display: flex;
+  background: #fff;
+  padding: 0.75rem 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large; }
+  .hdr a {
+    color: #333333;
+    padding: 0 0.7rem; }
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  margin: 1rem 0; }
+  .tiles .col {
+    padding: 0; }
+  .tiles .item {
+    margin: 0 1rem; }
+  .tiles .text {
+    margin: 1rem;
+    text-align: center;
+    color: black; }
+    .tiles .text p {
+      padding: .5rem;
+      font-size: small;
+      color: #949494; }
+  .tiles .img {
+    width: 540px;
+    overflow: hidden; }
+  .tiles img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5xs; }
+
+.mySlides {
+  display: none; }
+
+img {
+  vertical-align: middle; }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto; }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: #00e6e6; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.75s;
+  animation-name: fade;
+  animation-duration: 0.75s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .2; }
+  to {
+    opacity: 1; } }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px; } }
