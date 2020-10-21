@@ -4,11 +4,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clone-site</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <title>FOXic | Clone-site</title>
 </head>
 
 <body>
+  <header>
+    <div class="hdr-top">
+      <div class="icons">
+        <a href="#"><i class="far fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="light-text">
+        this is the black part
+      </div>
+      <div class="sm-text">
+        <ul>
+          <li>Services</li>
+          <li>English</li>
+          <li>USD</li>
+          <li>Log in</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hdr">
+      <div class="logo">
+        <a href="#"><img src="img/logo.png"></a>
+      </div>
+      <div class="list">
+        <ul>
+          <li>Home</li>
+          <li>Feature</li>
+          <li>Shop</li>
+          <li>Men</li>
+        </ul>
+      </div>
+      <div class="icons">
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#"><i class="far fa-heart"></i></a>
+        <a href="#"><i class="fas fa-cart-plus"></i></a>
+      </div>
+    </div>
+  </header>
 
+
+  <!-- slider -->
+  <section class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="img/slider-fashion-01_1296x.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/slider-fashion-02_1296x.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/promo-fashion.webp" style="width:100%">
+    </div>
+    <!-- dot -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+
+  <!-- collection -->
+  <section class="tiles">
+    <div class="col">
+      <a href="#">
+        <div class="item">
+          <div class="img img-h">
+            <img src="img/banner-fashion-2-01_720x.webp" width="540">
+          </div>
+          <div class="text">
+            <h4>Glass Collection</h4>
+            <p>Created using html</p>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="item">
+          <div class="img img-v">
+            <img src="img/banner-fashion-2-02_720x.webp" width="540">
+          </div>
+          <div class="text">
+            <h4>Glass Collection</h4>
+            <p>Created using html</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#">
+        <div class="item">
+          <div class="img img-v">
+            <img src="img/banner-fashion-2-04_720x.webp" width="540">
+          </div>
+          <div class="text">
+            <h4>Glass Collection</h4>
+            <p>Created using html</p>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="item">
+          <div class="img img-h">
+            <img src="img/banner-fashion-2-01_720x.webp" width="540">
+          </div>
+          <div class="text">
+            <h4>Glass Collection</h4>
+            <p>Created using html</p>
+          </div>
+      </a>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- js for slider -->
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
 </body>
 
 </html>
