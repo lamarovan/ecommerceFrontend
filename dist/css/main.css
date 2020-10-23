@@ -67,8 +67,25 @@ header {
     width: 540px;
     overflow: hidden; }
   .tiles img:hover {
-    transform: scale(1.1);
-    transition-duration: 0.5xs; }
+    transform: scale(1.2);
+    transition-duration: 0.7s; }
+
+.categories {
+  margin: 1rem; }
+  .categories .category {
+    display: flex;
+    padding: 1rem;
+    justify-content: center; }
+  .categories h2 {
+    margin: 2rem;
+    justify-content: center;
+    text-align: center; }
+  .categories a {
+    display: flex;
+    flex-direction: column;
+    color: #949494; }
+  .categories a:hover {
+    color: #00e6e6; }
 
 .mySlides {
   display: none; }

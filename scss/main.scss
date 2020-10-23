@@ -102,14 +102,38 @@ header {
     overflow: hidden;
   }
 
-  .img-h{
-    
+  img:hover {
+    transform: scale(1.2);
+    transition-duration: 0.7s;
+  }
+}
+
+// categories
+.categories{
+  margin: 1rem;
+
+  .category {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
   }
 
-  img:hover {
-    transform: scale(1.1);
-    transition-duration: 0.5xs;
+  h2{
+    margin: 2rem;
+    justify-content: center;
+    text-align: center;
   }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    color: rgb(148, 148, 148);
+  }
+
+  a:hover {
+    color: $primary-color;
+}
+
 }
 
 
