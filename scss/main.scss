@@ -72,6 +72,10 @@ header {
   }
 }
 
+.item{
+  margin: 0 0.75rem;
+}
+
 .tiles {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -82,9 +86,9 @@ header {
     padding: 0;
   }
 
-  .item{
-    margin: 0 1rem;
-  }
+  // .item{
+  //   margin: 0 1rem;
+  // }
 
   .text {
     margin: 1rem;
@@ -98,12 +102,11 @@ header {
   }
 
   .img{
-    width: 540px;
     overflow: hidden;
   }
 
   img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition-duration: 0.7s;
   }
 }
@@ -132,14 +135,68 @@ header {
 
   a:hover {
     color: $primary-color;
+    
+    h5 {
+      background-color: $primary-color;
+      border-radius: 5px;
+    }
+  }
+
+  .row {
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  .img{
+    overflow: hidden;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.7s;
+  }
+
+  .product-desc {
+    align-content: center;
+    text-align: center;
+  }
+
+  h4 {
+    font-weight: lighter;
+    color: black;
+    padding: 0.5rem;
+  }
+
+  p {
+    font-size: small;
+    padding: 0.25rem;
+  }
+
+  h5 {
+    color: black;
+    padding: 0.5rem;
+  }
 }
 
+.banner{ 
+  height: 480px;
+  overflow: hidden;
+}
+
+.img-banner:hover {
+  transform: scale(1.1);
+  transition-duration: 0.7s;
 }
 
 
 // slider
 .mySlides {display: none}
 img {vertical-align: middle;}
+
+.img-slider {
+  height: 420px;
+  object-fit: cover;
+}
 
 /* Slideshow container */
 .slideshow-container {
