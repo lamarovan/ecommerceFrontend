@@ -139,6 +139,50 @@ p {
   .sale p {
     padding: 1rem; }
 
+.features {
+  background: #333333;
+  display: flex;
+  padding: 2rem 1rem;
+  color: #fff; }
+  .features .feature {
+    padding: 0 1rem;
+    flex: 1;
+    display: flex;
+    justify-content: center; }
+  .features .content {
+    padding: 0 .75rem; }
+  .features .icon {
+    font-size: 48px; }
+  .features h4 {
+    font-weight: lighter; }
+  .features p {
+    padding: 0.5rem 0;
+    color: #fff;
+    font-size: 14px; }
+
+footer .row {
+  display: flex;
+  padding: 1rem; }
+
+footer .container {
+  flex: 1;
+  margin: 2rem 1rem; }
+
+footer .bottom {
+  background-color: #bbb;
+  text-align: center; }
+
+footer ul {
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0; }
+
+footer ul li {
+  padding: 0.25rem 0; }
+
+footer ul li:hover {
+  color: #00e6e6; }
+
 .mySlides {
   display: none; }
 
