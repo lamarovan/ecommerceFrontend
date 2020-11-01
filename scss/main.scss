@@ -36,6 +36,10 @@ header {
   }
 }
 
+p {
+  color: rgb(148, 148, 148);
+}
+
 .hdr-top {
   display: flex;
   background: #333333;
@@ -97,7 +101,7 @@ header {
     p {
       padding: .5rem;
       font-size: small;
-      color: rgb(148, 148, 148);
+      // color: rgb(148, 148, 148);
     }
   }
 
@@ -187,6 +191,32 @@ header {
   transform: scale(1.1);
   transition-duration: 0.7s;
 }
+
+// brands logo
+.brands {
+  display: flex;
+  margin: 3rem 1rem;
+}
+
+.brand-logo {
+  width: 10rem;
+  flex: 1;
+  opacity: 0.5;
+}
+
+.brand-logo:hover {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+.sale {
+  text-align: center;
+
+   p {
+    padding: 1rem;
+   }
+}
+
 
 
 // slider
