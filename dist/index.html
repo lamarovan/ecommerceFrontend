@@ -39,10 +39,10 @@
       </div>
       <div class="list">
         <ul>
-          <li>Home</li>
-          <li>Feature</li>
-          <li>Shop</li>
-          <li>Men</li>
+          <li><a href="#">Home page</a></li>
+          <li><a href="#">Theme features</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Men</a></li>
         </ul>
       </div>
       <div class="icons">
@@ -393,34 +393,8 @@
   
 
   <!-- js for slider -->
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
+  <script src="js/main.js"></script>
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-  </script>
 </body>
 
 </html>
